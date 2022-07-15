@@ -20,6 +20,7 @@ const ExpenseForm = ({ onExpenseCreation }) => {
     event.preventDefault();
 
     const expenseDate = {
+      id: Math.random().toString(),
       title: titleInput,
       amount: amountInput,
       date: new Date(dateInput),
